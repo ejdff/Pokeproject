@@ -1,34 +1,31 @@
 import React from 'react';
-import './App.css';
+import '../src/css/App.css';
+import '../src/css/PokeDex.css';
+import '../src/css/PokeCounter.css';
 import PokeData from './components/PokeData'
+import PokeCounter from './components/PokeCounter';
 
 
 function App() {
   return (
     <div className="App">
-      <div className='user_menu'>
-        <div className= 'user_tag'>
-          <img src='https://image.flaticon.com/icons/svg/188/188978.svg' className= 'user_img'></img>
-          <div className = 'user_name'>Emanuel</div>
+      <div className='red_band'>
+          <b className='header_title'>POKEMON WORLD</b>
         </div>
-        <ul className= 'user_info'>
-          <li>Main team</li>
-          <li>Regions</li>
-          <li>Stats</li>
-          <li>Known Pokemons</li>
-        </ul>
+      <div className='black_band'></div>
+      <div className='white_band'>
+        <div className= 'header_info'>Home</div>
+        <div className= 'header_info'>PokeDex</div>
+        <div className= 'header_info'>Regions</div>
+        <div className= 'header_info'>My Team</div>
       </div>
-      <div className= 'poke_info'>
-        <div className= 'pokedex_header'></div>
-        <PokeData></PokeData>
-      </div>
-      <div className='other_info'>
-        <ul className='news'>
-          <h1>News</h1>
-          <li>Team Rocket attacks all over the region</li>
-          <li>Pokemon WorldChampionship ranks</li>
-          <li>New poketech developed</li>
-        </ul>
+      <div className='comp_container'>
+        <div className= 'poke_info'>
+          <PokeData></PokeData>
+        </div>
+        <div className='other_info'>
+          <PokeCounter></PokeCounter>
+        </div>
       </div>
     </div>
   );

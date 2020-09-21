@@ -1,0 +1,11 @@
+{
+  "name": "poketest",
+  "version": "1.0.0",
+  "description": "jugando con react y webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Emanuel De Freitas <emanueljose2303@gmail.com>",
+  "license": "MIT"
+}
