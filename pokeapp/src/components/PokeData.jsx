@@ -55,7 +55,7 @@ const PokeData = () =>{
                 ctx2.fillText('Move 3: ' + moves[2],80,140)
                 
             }
-            //<PokeCounter datos={data}></PokeCounter>
+            
 
         } catch (error) {
             alert('No existe ese pokemon')
@@ -69,9 +69,7 @@ const PokeData = () =>{
     const handleChange = (e)=> {
         let event = document.getElementById('text_input').value
         let new_poke = pokedatacall(event)
-
     }
-
 
 
     return(
