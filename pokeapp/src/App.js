@@ -3,7 +3,7 @@ import '../src/css/App.css';
 import '../src/css/PokeDex.css';
 import '../src/css/PokeCounter.css';
 import PokeData from './components/PokeData'
-import PokeCounter from './components/PokeCounter';
+import Poketry from './components/Poketry';
 
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
           <PokeData></PokeData>
         </div>
         <div className='other_info'>
-          <PokeCounter></PokeCounter>
+          <Poketry></Poketry>
         </div>
       </div>
     </div>
