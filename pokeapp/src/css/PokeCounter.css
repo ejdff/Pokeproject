@@ -4,3 +4,31 @@
     border-top-left-radius: 3%;
     border-bottom-left-radius: 3%;
 }
+
+.strong_container{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.poke_strong_card{
+    width: 50%;
+    height: 100%;
+    border: black solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.poke_strong_img{
+    height: 75%;
+}
+.poke_strong_name{
+    height: 19%;
+    font-size: 14px;
+    align-self: flex-end;
+    justify-content: center;
+}

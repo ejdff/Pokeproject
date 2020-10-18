@@ -2,8 +2,8 @@ import React from 'react';
 import '../src/css/App.css';
 import '../src/css/PokeDex.css';
 import '../src/css/PokeCounter.css';
-import PokeData from './components/PokeData'
-import Poketry from './components/Poketry';
+import PokeDex from './components/PokeDex'
+import PokeData from './components/PokeData';
 
 
 function App() {
@@ -21,10 +21,10 @@ function App() {
       </div>
       <div className='comp_container'>
         <div className= 'poke_info'>
-          <PokeData></PokeData>
+          <PokeDex></PokeDex>
         </div>
         <div className='other_info'>
-          <Poketry></Poketry>
+          <PokeData></PokeData>
         </div>
       </div>
     </div>
