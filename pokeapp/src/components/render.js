@@ -27,8 +27,6 @@ async function render(data){
         document.getElementById('2name').innerHTML = name2
 
         
-        
-
     }else{
         let type_names_length1 = data[0].pokemon.length
         let type_names_length2 = data[1].pokemon.length

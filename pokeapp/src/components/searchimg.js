@@ -50,9 +50,6 @@ async function search_img(data0,data1,data2){
         const response2 = await fetch(data2)
         const pokemon2 = await response2.json()
 
-
-
-
         //Canvas set
         const img0 = pokemon0.sprites.front_default
         const canvas0 = document.getElementById('0img')

@@ -3,6 +3,7 @@ import { useState } from 'react';
 import PokeData from './PokeData';
 
 
+
 const PokeDex = (props) =>{
     const data = props.info
     if(props.info === undefined){
