@@ -22,8 +22,16 @@ const PokeDex = (props) =>{
             let moves_num = data.moves.length
             return Math.floor(Math.random()*moves_num) 
         }
- 
-        let moves = [data.moves[random()].move.name,data.moves[random()].move.name,data.moves[random()].move.name]
+        
+        console.log(data)
+        let moves = []
+        if(data.moves.length === 0){
+            moves = ['','','']
+        }
+        else{
+            moves = [data.moves[random()].move.name,data.moves[random()].move.name,data.moves[random()].move.name]
+        }
+        
              
         //Getting canvas from html
         const canvas = document.getElementById('poke_pic')
