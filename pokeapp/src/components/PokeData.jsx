@@ -52,9 +52,6 @@ class PokeData extends React.Component {
             let poke1 = final[1].pokemon[random2].pokemon
             let poke2 = final[2].pokemon[random3].pokemon
         
-            let name0 = poke0.name
-            let name1 = poke1.name
-            let name2 = poke2.name
 
             const response4 = await fetch(poke0.url)
             const pokemon4 = await response4.json()
@@ -95,11 +92,6 @@ class PokeData extends React.Component {
 
             let poke0= final[0].pokemon[random1].pokemon
             let poke1 = final[1].pokemon[random2].pokemon
-            
-        
-            let name0 = poke0.name
-            let name1 = poke1.name
-            
 
             const response4 = await fetch(poke0.url)
             const pokemon4 = await response4.json()
@@ -155,9 +147,6 @@ class PokeData extends React.Component {
             let poke1 = final[1].pokemon[random2].pokemon
             let poke2 = final[2].pokemon[random3].pokemon
         
-            let name0 = poke0.name
-            let name1 = poke1.name
-            let name2 = poke2.name
 
             const response4 = await fetch(poke0.url)
             const pokemon4 = await response4.json()
@@ -196,12 +185,7 @@ class PokeData extends React.Component {
 
             let poke0= final[0].pokemon[random1].pokemon
             let poke1 = final[1].pokemon[random2].pokemon
-            
-        
-            let name0 = poke0.name
-            let name1 = poke1.name
-            
-
+         
             const response4 = await fetch(poke0.url)
             const pokemon4 = await response4.json()
 
@@ -214,7 +198,8 @@ class PokeData extends React.Component {
             
             
         }
-        else{
+        else if(doble_damage_to.length === 1){
+            console.log(doble_damage_to)
             const response1 = await fetch(doble_damage_to[0][1])
             const pokemon1 = await response1.json()
 
@@ -224,29 +209,42 @@ class PokeData extends React.Component {
             })
             
             let type_names_length1 = final[0].pokemon.length
-            
-            
-        
             let random1= Math.floor(Math.random()*type_names_length1)
             
-            
-
             let poke0= final[0].pokemon[random1].pokemon
-            
-            
-        
-            let name0 = poke0.name
-            
+
             
 
             const response4 = await fetch(poke0.url)
             const pokemon4 = await response4.json()
 
-            
-
+        
             this.setState({
                 back2: [pokemon4]
             })
+        }
+        else{
+            console.log(doble_damage_to)
+            const canvas0 = document.getElementById('0img')
+            const ctx0 = canvas0.getContext("2d")
+
+            const canvas1 = document.getElementById('1img')
+            const ctx1 = canvas1.getContext("2d")
+
+            const canvas2 = document.getElementById('2img')
+            const ctx2 = canvas2.getContext("2d")
+            
+            function dibujar(){
+                ctx0.clearRect(0,0, canvas0.width, canvas0.height)
+                ctx1.clearRect(0,0, canvas1.width, canvas1.height)
+                ctx2.clearRect(0,0, canvas2.width, canvas2.height)
+            }
+
+            document.getElementById('0name').innerHTML = ''
+            document.getElementById('1name').innerHTML = ''
+            document.getElementById('2name').innerHTML = ''
+
+            dibujar()
         }
     }
 

@@ -147,6 +147,22 @@ const PokeCounter = (props) =>{
                     <div className= 'poke_strong_name' id='2name'></div>
                 </div>
             </div>
+
+            <h1>Weak Against</h1>
+            <div className= 'strong_container'>
+                <div className='poke_strong_card'>
+                    <canvas className='poke_strong_img' id='0img'></canvas>
+                    <div className= 'poke_strong_name' id='0name'></div>
+                </div>
+                <div className='poke_strong_card'>
+                    <canvas className='poke_strong_img' id='1img'></canvas>
+                    <div className= 'poke_strong_name' id='1name'></div>
+                </div>
+                <div className='poke_strong_card'>
+                    <canvas className='poke_strong_img' id='2img'></canvas>
+                    <div className= 'poke_strong_name' id='2name'></div>
+                </div>
+            </div>
             
         
         </div>
