@@ -6,6 +6,7 @@ import PokeData from './PokeData';
 
 const PokeDex = (props) =>{
     const data = props.info
+    
     if(props.info === undefined){
     }
     else if(props.info.length === 0){
@@ -23,7 +24,6 @@ const PokeDex = (props) =>{
             return Math.floor(Math.random()*moves_num) 
         }
         
-        console.log(data)
         let moves = []
         if(data.moves.length === 0){
             moves = ['','','']

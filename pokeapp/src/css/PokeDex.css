@@ -10,11 +10,10 @@
     align-items: center;
     position: relative;
 }
-.user_input{
-    width: 95%;
+
+.input_box{
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     align-items: center;
 }
 

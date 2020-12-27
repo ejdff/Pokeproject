@@ -7,7 +7,7 @@
 
 .strong_container{
     width: 100%;
-    height: 100px;
+    height: 150px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -19,16 +19,19 @@
     height: 100%;
     border: black solid;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
 }
 
 .poke_strong_img{
-    height: 75%;
+    height: 60%;
+    width: 60%;
+    align-self: center;
 }
 .poke_strong_name{
     height: 19%;
     font-size: 14px;
     align-self: flex-end;
     justify-content: center;
+    align-self: center;
 }
