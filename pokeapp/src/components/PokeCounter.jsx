@@ -36,15 +36,39 @@ const PokeCounter = (props) =>{
             //Creating new Image Object
             const pkmon_strong0 = new Image()
             pkmon_strong0.setAttribute('src',img0)
-            pkmon_strong0.addEventListener('load',dibujar)
+            if(pkmon_strong0.complete === true){
+                pkmon_strong0.addEventListener('load',dibujar)
+            }else{
+                setTimeout(()=>{
+                    pkmon_strong0.setAttribute('src',img0)
+                    pkmon_strong0.addEventListener('load',dibujar)
+                },1000)
+            }
+            
 
             const pkmon_strong1 = new Image()
             pkmon_strong1.setAttribute('src',img1)
-            pkmon_strong1.addEventListener('load',dibujar)
+            if(pkmon_strong1.complete === true){
+                pkmon_strong1.addEventListener('load',dibujar)
+            }else{
+                setTimeout(()=>{
+                    pkmon_strong1.setAttribute('src',img1)
+                    pkmon_strong1.addEventListener('load',dibujar)
+                },1000)
+            }
+            
 
             const pkmon_strong2 = new Image()
             pkmon_strong2.setAttribute('src',img2)
-            pkmon_strong2.addEventListener('load',dibujar)
+            if(pkmon_strong2.complete === true){
+                pkmon_strong2.addEventListener('load',dibujar)
+            }else{
+                setTimeout(()=>{
+                    pkmon_strong2.setAttribute('src',img2)
+                    pkmon_strong2.addEventListener('load',dibujar)
+                },1000)
+            }
+            
 
             function dibujar(){
                 ctx0.clearRect(0,0, canvas0.width, canvas0.height)
@@ -87,11 +111,26 @@ const PokeCounter = (props) =>{
             //Creating new Image Object
             const pkmon_strong0 = new Image()
             pkmon_strong0.setAttribute('src',img0)
-            pkmon_strong0.addEventListener('load',dibujar)
+            if(pkmon_strong0.complete === true){
+                pkmon_strong0.addEventListener('load',dibujar)
+            }else{
+                setTimeout(()=>{
+                    pkmon_strong0.setAttribute('src',img0)
+                    pkmon_strong0.addEventListener('load',dibujar)
+                },1000)
+            }
+            
 
             const pkmon_strong1 = new Image()
             pkmon_strong1.setAttribute('src',img1)
-            pkmon_strong1.addEventListener('load',dibujar)
+            if(pkmon_strong1.complete === true){
+                pkmon_strong1.addEventListener('load',dibujar)
+            }else{
+                setTimeout(()=>{
+                    pkmon_strong1.setAttribute('src',img1)
+                    pkmon_strong1.addEventListener('load',dibujar)
+                },1000)
+            }
 
                 
 
@@ -130,9 +169,14 @@ const PokeCounter = (props) =>{
             //Creating new Image Object
             const pkmon_strong0 = new Image()
             pkmon_strong0.setAttribute('src',img0)
-            pkmon_strong0.addEventListener('load',dibujar)
-
-
+            if(pkmon_strong0.complete === true){
+                pkmon_strong0.addEventListener('load',dibujar)
+            }else{
+                setTimeout(()=>{
+                    pkmon_strong0.setAttribute('src',img0)
+                    pkmon_strong0.addEventListener('load',dibujar)
+                },1000)
+            }
                 
 
             function dibujar(){
@@ -180,15 +224,39 @@ const PokeCounter = (props) =>{
             //Creating new Image Object
             const pkmon_weak0 = new Image()
             pkmon_weak0.setAttribute('src',img3)
-            pkmon_weak0.addEventListener('load',dibujar)
+            if(pkmon_weak0.complete === true){
+                pkmon_weak0.addEventListener('load',dibujar)
+            }else{
+                setTimeout(()=>{
+                    pkmon_weak0.setAttribute('src',img3)
+                    pkmon_weak0.addEventListener('load',dibujar)
+                },1000)
+            }
+            
 
             const pkmon_weak1 = new Image()
             pkmon_weak1.setAttribute('src',img4)
-            pkmon_weak1.addEventListener('load',dibujar)
+            if(pkmon_weak1.complete === true){
+                pkmon_weak1.addEventListener('load',dibujar)
+            }else{
+                setTimeout(()=>{
+                    pkmon_weak1.setAttribute('src',img4)
+                    pkmon_weak1.addEventListener('load',dibujar)
+                },1000)
+            }
+            
 
             const pkmon_weak2 = new Image()
             pkmon_weak2.setAttribute('src',img5)
-            pkmon_weak2.addEventListener('load',dibujar)
+            if(pkmon_weak2.complete === true){
+                pkmon_weak2.addEventListener('load',dibujar)
+            }else{
+                setTimeout(()=>{
+                    pkmon_weak2.setAttribute('src',img5)
+                    pkmon_weak2.addEventListener('load',dibujar)
+                },1000)
+            }
+            
 
             function dibujar(){
                 ctx3.clearRect(0,0, canvas3.width, canvas3.height)
@@ -229,11 +297,26 @@ const PokeCounter = (props) =>{
             //Creating new Image Object
             const pkmon_weak0 = new Image()
             pkmon_weak0.setAttribute('src',img3)
-            pkmon_weak0.addEventListener('load',dibujar)
+            if(pkmon_weak0.complete === true){
+                pkmon_weak0.addEventListener('load',dibujar)
+            }else{
+                setTimeout(()=>{
+                    pkmon_weak0.setAttribute('src',img3)
+                    pkmon_weak0.addEventListener('load',dibujar)
+                },1000)
+            }
+            
 
             const pkmon_weak1 = new Image()
             pkmon_weak1.setAttribute('src',img4)
-            pkmon_weak1.addEventListener('load',dibujar)
+            if(pkmon_weak1.complete === true){
+                pkmon_weak1.addEventListener('load',dibujar)
+            }else{
+                setTimeout(()=>{
+                    pkmon_weak1.setAttribute('src',img4)
+                    pkmon_weak1.addEventListener('load',dibujar)
+                },1000)
+            }
 
                 
 
@@ -277,11 +360,15 @@ const PokeCounter = (props) =>{
             //Creating new Image Object
             const pkmon_weak0 = new Image()
             pkmon_weak0.setAttribute('src',img3)
-            pkmon_weak0.addEventListener('load',dibujar)
-
-
-                
-
+            if(pkmon_weak0.complete === true){
+                pkmon_weak0.addEventListener('load',dibujar)
+            }else{
+                setTimeout(()=>{
+                    pkmon_weak0.setAttribute('src',img3)
+                    pkmon_weak0.addEventListener('load',dibujar)
+                },1000)
+            }
+            
             function dibujar(){
                 ctx3.clearRect(0,0, canvas3.width, canvas3.height)
                 ctx4.clearRect(0,0, canvas4.width, canvas4.height)
